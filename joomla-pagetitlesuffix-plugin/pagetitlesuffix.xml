@@ -9,7 +9,7 @@
     <authorUrl>url</authorUrl>
     <version>4.0.0</version>
     <description>PLG_SYSTEM_PAGETITLESUFFIX_XML_DESCRIPTION</description>
-	<projectName>pagetitlesuffix</projectName>
+    <projectName>pagetitlesuffix</projectName>
 
     <files>
         <filename plugin="pagetitlesuffix">pagetitlesuffix.php</filename>
@@ -17,7 +17,7 @@
     <media destination="plg_system_pagetitlesuffix" folder="media">
 		<folder>js</folder>
 		<filename>index.html</filename>
-	</media>
+    </media>
     <languages>
         <language tag="en-GB">language/en-GB/en-GB.plg_system_pagetitlesuffix.ini</language>
         <language tag="en-GB">language/en-GB/en-GB.plg_system_pagetitlesuffix.sys.ini</language>	

@@ -28,14 +28,6 @@ class PlgSystemPageTitleSuffix extends CMSPlugin
      * @since  4.0.0
      */ 
 	 
-
-    /**
-     * Application object.
-     * 
-     * @var    JApplicationCms
-     * @since  4.0.0
-     */
-	 
     protected $app;
 
     /**
@@ -49,7 +41,7 @@ class PlgSystemPageTitleSuffix extends CMSPlugin
 	
     public function __construct(&$subject, $config)
     {
-		$this->loadLanguage('plg_system_pagetitlesuffix');
+	$this->loadLanguage('plg_system_pagetitlesuffix');
         parent::__construct($subject, $config);
     }
 
@@ -69,7 +61,7 @@ class PlgSystemPageTitleSuffix extends CMSPlugin
         // The feature is only available for administrator side
         if ($isAdmin) {
             $pagetitlesuffix_value = $this->params->get('pagetitlesuffix_value','');
-		    HTMLHelper::_('script', 'media/plg_system_pagetitlesuffix/js/page-title-suffix.es6.js', array('version' => 'auto'));
+            HTMLHelper::_('script', 'media/plg_system_pagetitlesuffix/js/page-title-suffix.es6.js', array('version' => 'auto'));
             Factory::getDocument()->addScriptOptions(
                 'page-title-suffix',
                 array(

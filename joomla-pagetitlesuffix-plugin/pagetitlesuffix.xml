@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="system">
+    <name>plg_system_pagetitlesuffix</name>
+    <author>Khushi Rauniyar</author>
+    <creationDate>April 2022</creationDate>
+    <copyright>Copyright (C) 2022 Holder. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>khushirauniyar8@gmail.com</authorEmail>
+    <authorUrl>url</authorUrl>
+    <version>4.0.0</version>
+    <description>PLG_SYSTEM_PAGETITLESUFFIX_XML_DESCRIPTION</description>
+	<projectName>pagetitlesuffix</projectName>
+
+    <files>
+        <filename plugin="pagetitlesuffix">pagetitlesuffix.php</filename>
+    </files>
+    <media destination="plg_system_pagetitlesuffix" folder="media">
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_pagetitlesuffix.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.plg_system_pagetitlesuffix.sys.ini</language>	
+    </languages>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+            <field name="pagetitlesuffix_value" type="text" description="Enter the title suffix value" label="PLG_SYSTEM_PAGETITLESUFFIX_SECTION"/>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
